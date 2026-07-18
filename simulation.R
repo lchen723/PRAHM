@@ -71,7 +71,7 @@ corrected_ridge_AH_with_bootstrap <- function(time, status, W, Z, Sigma_e, rep.m
     A <- A_base - corr_total
     B <- fit_surv$d
     
-    # --- helper: £N0 at each subject's Y_i ---
+    # --- helper: Â£N0 at each subject's Y_i ---
     Lambda0_subjects <- function(beta_hat) {
       dLambda <- numeric(m)
       for (j in seq_len(m)) {
